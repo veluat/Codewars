@@ -22,3 +22,18 @@ function  calculateAge(a, b) {
   if (a - b > 1) return 'You will be born in ' + (a - b) + ' years.';
 }
 }
+
+/*What is between?
+
+Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them. */
+
+//My solutions:
+
+function between(a, b) {
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+  arr.push(i);
+}
+  return arr;
+}
+
