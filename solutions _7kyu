@@ -17,8 +17,15 @@ function solution(nums){
   : nums.sort((a,b) => a - b);
 }
 
-/*List Filtering
+/List Filtering
 
 function filter_list(l) {
   return l.filter(elem => typeof elem != "string");
+}
+
+/Summing a number's digits
+
+function sumDigits(number) {
+  let arr = Math.abs(number).toString().split('');
+  return arr.reduce((sum, elem) => +sum + +elem, 0);
 }
