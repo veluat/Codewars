@@ -16,3 +16,9 @@ function solution(nums){
   return nums == null || nums == [] ? [] 
   : nums.sort((a,b) => a - b);
 }
+
+/*List Filtering
+
+function filter_list(l) {
+  return l.filter(elem => typeof elem != "string");
+}
