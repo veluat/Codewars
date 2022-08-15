@@ -42,3 +42,10 @@ function minValue(values){
   result = result.sort((a,b) => a - b).join('');
   return Number(result);
 }
+
+//Binary Addition
+
+function addBinary(a,b) {
+  let n = a + b;
+  return n.toString(2);
+}
