@@ -29,3 +29,16 @@ function sumDigits(number) {
   let arr = Math.abs(number).toString().split('');
   return arr.reduce((sum, elem) => +sum + +elem, 0);
 }
+
+//Form The Minimum
+
+function minValue(values){
+  let result = [];
+  for (let elem of values) {
+  if (!result.includes(elem)) {
+    result.push(elem);
+  }
+}
+  result = result.sort((a,b) => a - b).join('');
+  return Number(result);
+}
