@@ -28,3 +28,19 @@ function likes(names) {
     return names[0] + ", " + names[1] + " and " + Number(names.length-2) + " others like this";
   }
 }
+
+
+/*Break camelCase
+Complete the solution so that the function will break up camel casing, using a space between words.
+
+Example
+"camelCasing"  =>  "camel Casing"
+"identifier"   =>  "identifier"
+""             =>  ""
+*/
+
+//My solution:
+
+function solution(string) {
+  return string.replace(/([A-Z])/g, ' $1');
+}
