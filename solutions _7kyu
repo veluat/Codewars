@@ -49,3 +49,27 @@ function addBinary(a,b) {
   let n = a + b;
   return n.toString(2);
 }
+
+//The highest profit wins!
+
+function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
+
+//Sum of angles
+
+function angle(n) {
+  return (n-2) * 180;
+}
+
+//Odd or Even?
+
+function oddOrEven(array) {
+  let sum = 0;
+  if (array.length !== 0) {
+    sum = array.reduce((elem, sum) => sum += elem, 0);
+    return sum % 2 === 0 ? 'even' : 'odd';
+  } else {
+    return 'even';
+  }
+}
