@@ -67,3 +67,30 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   }
   return [humanYears,catYears,dogYears];
 }
+
+
+//Enumerable Magic #3 - Does My List Include This?
+
+function include(arr, item){
+  return arr.includes(item);
+}
+
+//Grasshopper - Terminal game move function
+
+function move (position, roll) {
+  return position + roll*2;
+}
+
+//If you can't sleep, just count sheep!!
+
+var countSheep = function (num) {
+  let str = "";
+  for (let i = 1; i <= num; i++) { str += `${i} sheep...`; }
+  return str;
+}
+
+//Remove duplicates from list
+
+function distinct(a) {
+  return [...new Set(a)];
+}
