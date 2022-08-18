@@ -94,3 +94,43 @@ var countSheep = function (num) {
 function distinct(a) {
   return [...new Set(a)];
 }
+
+//Filling an array (part 1)
+
+const arr = N => {
+  const arr = [];
+  for (let i = 0; i < N; i++) {
+  arr.push(i);
+  }
+  return arr;
+}
+
+//Merge two sorted arrays into one
+
+function mergeArrays(arr1, arr2) {
+  let newArr = [...arr1, ...arr2];
+  return newArr.filter((elem, index) => newArr.indexOf(elem) === index).sort((a,b) => a - b);
+}
+
+//Regular Ball Super Ball
+
+var Ball = function(ballType) {
+  return this.ballType = ballType ? ballType : "regular";
+};
+
+//Multiplication table for number
+
+function multiTable(number) {
+  let mult1 = 1 * number;
+  let mult2 = 2 * number;
+  let mult3 = 3 * number;
+  let mult4 = 4 * number;
+  let mult5 = 5 * number;
+  let mult6 = 6 * number;
+  let mult7 = 7 * number;
+  let mult8 = 8 * number;
+  let mult9 = 9 * number;
+  let mult10 = 10 * number;
+  
+  return `1 * ${number} = ${mult1}\n2 * ${number} = ${mult2}\n3 * ${number} = ${mult3}\n4 * ${number} = ${mult4}\n5 * ${number} = ${mult5}\n6 * ${number} = ${mult6}\n7 * ${number} = ${mult7}\n8 * ${number} = ${mult8}\n9 * ${number} = ${mult9}\n10 * ${number} = ${mult10}`
+}
