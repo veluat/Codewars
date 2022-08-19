@@ -120,22 +120,22 @@ function abbrevName(name){
   return (newArray[0][0] + "." + newArray[1][0]).toUpperCase()
     }
 
-    //Keep Hydrated!
+//Keep Hydrated!
 
-    function litres(time) {
-      return Math.floor (time/2);
-    }
+function litres(time) {
+  return Math.floor (time/2);
+}
 
-    //Is he gonna survive?
+//Is he gonna survive?
 
-    function hero(bullets, dragons){
-      let sumBullets = bullets;
-      if (sumBullets >= dragons*2) {
-        return true;
-      } else {
-        return false;
-      }
-      }
+function hero(bullets, dragons){
+  let sumBullets = bullets;
+    if (sumBullets >= dragons*2) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 //DNA to RNA Conversion
 
