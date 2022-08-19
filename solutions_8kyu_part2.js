@@ -134,3 +134,40 @@ function multiTable(number) {
   
   return `1 * ${number} = ${mult1}\n2 * ${number} = ${mult2}\n3 * ${number} = ${mult3}\n4 * ${number} = ${mult4}\n5 * ${number} = ${mult5}\n6 * ${number} = ${mult6}\n7 * ${number} = ${mult7}\n8 * ${number} = ${mult8}\n9 * ${number} = ${mult9}\n10 * ${number} = ${mult10}`
 }
+
+//Bin to Decimal
+
+function binToDec(bin){
+  return parseInt(bin, 2);
+}
+
+//Grasshopper - Messi Goals
+
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+//Training JS #5: Basic data types--Object
+
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+
+//Printing Array elements with Comma delimiters
+
+function printArray(array){
+  return array.join(',');
+}
+
+//Powers of 2
+
+function powersOfTwo(n){
+ let arr = [];
+  for (let i = 0; i <= n; i++) {
+    arr.push(2 ** i);
+  }
+    return arr;
+}
+
