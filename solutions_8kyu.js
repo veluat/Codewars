@@ -1,15 +1,6 @@
-/*8 kyu
+//8 kyu
 
-How old will I be in 2099?
-
-Your task is to write a function that takes two parameters: the year of birth and the year to count years in relation to. As Philip is getting more curious every day he may soon want to know how many years it was until he would be born, so your function needs to work with both dates in the future and in the past.
-
-Provide output in this format: For dates in the future: "You are ... year(s) old." For dates in the past: "You will be born in ... year(s)." If the year of birth equals the year requested return: "You were born this very year!"
-
-"..." are to be replaced by the number, followed and proceeded by a single space. Mind that you need to account for both "year" and "years", depending on the result.
-*/
-
-//My solutions:
+//How old will I be in 2099?
 
 function  calculateAge(a, b) {
   if (a==b) {
@@ -23,11 +14,7 @@ function  calculateAge(a, b) {
 }
 }
 
-/*What is between?
-
-Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them. */
-
-//My solutions:
+//What is between?
 
 function between(a, b) {
   let arr = [];
@@ -37,22 +24,7 @@ function between(a, b) {
   return arr;
 }
 
-/*I love you, a little , a lot, passionately ... not at all
-
-Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
-
-I love you
-a little
-a lot
-passionately
-madly
-not at all
-When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
-
-Your goal in this kata is to determine which phrase the girls would say for a flower of a given number of petals, where nb_petals > 0.
-*/
-
-//My solutions:
+// I love you, a little , a lot, passionately ... not at all
 
 function howMuchILoveYou(nbPetals) {
   if (nbPetals % 6 == 1) {
@@ -69,6 +41,7 @@ function howMuchILoveYou(nbPetals) {
     return ("not at all");
   }
 }
+
 //Multiply
 
 function multiply(a, b){
@@ -120,22 +93,22 @@ function abbrevName(name){
   return (newArray[0][0] + "." + newArray[1][0]).toUpperCase()
     }
 
-    //Keep Hydrated!
+//Keep Hydrated!
 
-    function litres(time) {
-      return Math.floor (time/2);
-    }
+function litres(time) {
+  return Math.floor (time/2);
+}
 
-    //Is he gonna survive?
+//Is he gonna survive?
 
-    function hero(bullets, dragons){
-      let sumBullets = bullets;
-      if (sumBullets >= dragons*2) {
-        return true;
-      } else {
-        return false;
-      }
-      }
+function hero(bullets, dragons){
+  let sumBullets = bullets;
+    if (sumBullets >= dragons*2) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 //DNA to RNA Conversion
 
