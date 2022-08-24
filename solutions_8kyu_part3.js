@@ -48,3 +48,37 @@ function getGrade (s1, s2, s3) {
     return "F";
   }
 }
+
+
+//Fundamentals: Return
+
+function add(a,b){
+  return a+b;
+}
+
+function divide(a,b){
+  return a/b;
+}
+
+function multiply(a,b){
+  return a*b;
+}
+
+function mod(a,b){
+  return a % b;
+}
+
+function exponent(a,b){
+  return a**b;
+}
+  
+function subt(a,b){
+  return a-b;
+}
+
+//Simple validation of a username with regex
+
+function validateUsr(username) {
+  let res = /^[a-z0-9_]{4,16}$/;
+  return res.test(username);
+}
