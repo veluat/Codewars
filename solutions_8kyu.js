@@ -1,4 +1,4 @@
-//8 kyu
+//8 kyu 20 solutions
 
 //How old will I be in 2099?
 

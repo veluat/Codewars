@@ -1,3 +1,5 @@
+//8 kyu 20 solutions 
+
 //Fake Binary
 
 function fakeBin(x){
@@ -164,10 +166,9 @@ function printArray(array){
 //Powers of 2
 
 function powersOfTwo(n){
- let arr = [];
+let arr = [];
   for (let i = 0; i <= n; i++) {
     arr.push(2 ** i);
   }
     return arr;
 }
-
