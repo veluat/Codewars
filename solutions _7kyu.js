@@ -85,8 +85,8 @@ function reverseLetter(str) {
 //Shortest Word
 
 function findShort(s){
- let minWord = s.split(' ').sort((a,b) => a.length - b.length);
- return minWord[0].length;
+  let minWord = s.split(' ').sort((a,b) => a.length - b.length);
+  return minWord[0].length;
 }
 
 //Find the stray number
