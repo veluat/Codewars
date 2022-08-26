@@ -1,4 +1,4 @@
-//7 kyu 13 solutions
+//7 kyu 14 solutions
 
 /* Sort Numbers
 
@@ -108,3 +108,10 @@ function descendingOrder(n) {
   return +n.toString().split('').sort((a,b) => a - b).reverse().join('');
 }
 
+//Largest pair sum in array
+
+function largestPairSum (numbers) {
+  numbers.sort((a,b) => a - b).reverse();
+  let sum = numbers[0] + numbers[1];
+  return sum;
+}
