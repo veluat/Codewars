@@ -1,3 +1,5 @@
+//Add 9 solutions
+
 //Grasshopper - Array Mean
 
 var findAverage = function (nums) {
@@ -81,4 +83,16 @@ function subt(a,b){
 function validateUsr(username) {
   let res = /^[a-z0-9_]{4,16}$/;
   return res.test(username);
+}
+
+//Sum without highest and lowest number
+
+function sumArray(array) {
+  if ( array == null || array.length < 3 || array === []) {
+    return 0;
+  } else {
+    array.sort((a,b) => a - b).splice(0,1);
+    array.splice(-1,1);
+    return array.reduce((elem, sum) => sum += elem, 0);
+  }
 }
